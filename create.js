@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const addButtons = document.querySelectorAll(".add-motoriasta");
   const container = document.getElementById("formularios-container");
-  const urlPlanilha = "https://script.google.com/macros/s/AKfycbyhwJgbIvW6Y6XaesQL2smSnr5rAnpFv_U9A3lTVaWh356ebRd7Hfm2q28FIR-WaXP-/exec";
+  const urlPlanilha = "https://script.google.com/macros/s/";
 
   let formularios = JSON.parse(localStorage.getItem("formularios")) || [];
 
