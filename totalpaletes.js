@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const urlPlanilha = "https://script.google.com/macros/s/AKfycbypO9FQ235aRfnWeP5sk1UcwNTaYvgwKvzGgLc-Ija3VGV82ykztJeuOhal7QG7VuVJ/exec";
+  const urlPlanilha = "https://script.google.com/macros/s/";
   const container = document.querySelector('footer #dados-planilha');
 
   if (!container) {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
           if (divExistente) {
             if (divExistente.textContent !== novoTexto) {
               divExistente.textContent = novoTexto;
-            } // senão, não faz nada — evita piscar!
+            } 
           } else {
             const novaDiv = document.createElement('div');
             novaDiv.className = 'item-dado';
