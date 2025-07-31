@@ -1,0 +1,200 @@
+
+@import
+url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+}
+
+body{
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100vh;
+}
+
+.nome-motorista{
+    position: fixed;
+    background-color: rgba(244, 244, 244, 0.519);
+    backdrop-filter: blur(3px);
+    z-index: 999;
+    top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 7px;
+    padding: 10px;
+    border-bottom: none;
+}
+.nome-motorista #lupa-pesquisa{
+    position: absolute;
+    right: 0%;
+    top: 0px;
+    width: 43px;
+    cursor: pointer;
+    display: block;
+    padding: 10px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+.nome-motorista .pesquisa-motorista{
+    position: fixed;
+    top: 63px;
+    background-color: rgb(244, 244, 244);
+    width: 80%;
+    max-width: 380px;
+    padding: 8px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    display: none;
+}
+.nome-motorista .open{
+    display: block;
+    z-index: 1;
+    animation: teste .5s ease-in-out;     
+}
+@keyframes teste {
+    from { 
+        width: 0px;
+       transform: rotate(100deg);
+     }
+    
+}
+
+.nome-motorista div{
+    width: 90%;
+    max-width: 770px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.nome-motorista div input{
+    background-color: rgb(244, 244, 244);
+    width: 70%;
+    max-width: 300px;
+    padding: 7px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+}
+.nome-motorista div button{
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    width: 70px;
+}
+
+#formularios-container{
+    position: relative;
+    top: 123px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#formularios-container > form:last-child {
+   margin-bottom: 50px;
+}
+
+#formularios-container form{
+    position: relative;
+    width: 90%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 3px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+#formularios-container form #alfinete-card{
+    position : absolute;
+    top: 30px;
+    left: 47%;
+    width: 40px;
+}
+@keyframes shake {
+  0% { transform: translateX(0); }
+  20% { transform: translateX(-7px); }
+  40% { transform: translateX(7px); }
+  60% { transform: translateX(-7px); }
+  80% { transform: translateX(7px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.4s ease-in-out;
+}
+  
+#formularios-container legend{
+    position: relative;
+    top: -7px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#formularios-container form input{
+    border: none;
+    background-color: rgba(233, 233, 233, 0.834);
+    text-align: center;
+    border-radius: 3px;
+}
+#formularios-container textarea{
+    background-color: rgba(233, 233, 233, 0.834);
+    text-align: center;
+    resize: none;
+    padding: 3px;
+    border: none;
+    border-radius: 3px;
+}
+#formularios-container form .adesivo{
+    position: absolute;
+    left: 3%;
+    bottom: 40px;
+    width: 50px;
+}
+@keyframes moverCaminhao {
+  to{ left: 82%; }
+}
+
+.andando {
+  animation: moverCaminhao 7s ease forwards;
+}
+#formularios-container form button{
+    padding: 9px;
+    border: none;
+    border-radius: 3px;
+    background-color: #212121;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+#formularios-container form button:active {
+   transform: scale(0.96);
+}
+footer{
+    position: fixed;
+    background-color: rgba(244, 244, 244, 0.519);
+    backdrop-filter: blur(3px);
+    z-index: 999;
+    bottom: 0;
+    width: 100%;
+    height: 37px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 37PX;
+}
+
+
+

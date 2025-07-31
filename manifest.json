@@ -1,0 +1,20 @@
+{
+    "name": "Controle de Palete",
+    "short_name": "Controle de Palete",
+    "start_url": "/index.html",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": " #f4f4f4",
+    "icons": [
+        {
+            "src": "path/para/icone-de-192x192.png",
+            "sizes": "200x200",
+            "type": "image/png"
+        },
+        {
+            "src": "path/para/icone-de-512x512.png",
+            "sizes": "712x712",
+            "type": "image/png"
+        }
+    ]
+}

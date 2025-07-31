@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Palete</title>
+    <link rel="stylesheet" href="style.css">
+     <link rel="manifest" href="/manifest.json">
+    <link rel="icon" href="img/palete.png" type="image/x-icon">
+    <script src="pesquisaMotorista.js" defer></script>
+</head>
+<body>
+
+    <div class="nome-motorista">
+        <img id="lupa-pesquisa" src="img/lupa.png" alt="">
+        <input class="pesquisa-motorista" type="text" placeholder="Pesquisar Motorista">
+        <h1>Controle de Palete</h1>
+      <div>
+          <input type="text" name="nome-motorista" placeholder="Nome do Motorista" required>
+          <button class="add-motoriasta">Adicionar</button>
+      </div>
+    </div>
+    <div id="formularios-container"></div>
+    <footer>
+       <div id="dados-planilha"></div>
+    </footer>
+    <script src="create.js"></script>
+    <script src="totalpaletes.js"></script>
+    
+</body>
+</html> 
