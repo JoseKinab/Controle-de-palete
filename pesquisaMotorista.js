@@ -18,9 +18,9 @@ inputPesquisa.addEventListener('input', () => {
     const nome = nomeInput.value.toLowerCase();
 
     if (nome.includes(termo)) {
-      card.style.display = ''; // mostra o card
+      card.style.display = ''; 
     } else {
-      card.style.display = 'none'; // esconde o card
+      card.style.display = 'none'; 
     }
   }
 });
