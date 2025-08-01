@@ -62,7 +62,7 @@ body{
 }
 @keyframes teste {
     from { 
-       top: 40px;
+       top: 37px;
        transform: scale(1.5);
      }
     
