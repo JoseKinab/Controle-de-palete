@@ -45,32 +45,29 @@ body{
     border-radius: 2px;
 }
 .nome-motorista .pesquisa-motorista{
-    position: fixed;
-    top: 63px;
-    background-color: rgb(244, 244, 244);
-    width: 80%;
+    position: absolute;
+    top: 0px;
+    right: 22px;
+    background-color: #212121;
+    width: 0%;
     max-width: 380px;
-    padding: 8px;
-    border: 1px solid rgb(0, 0, 0);
+    padding: 7px;
+    border: 1px solid  #212121;
     border-radius: 3px;
-    display: none;
+    transition: .5s ease-in-out;
+    z-index: -1;
+    color: white;
 }
 .nome-motorista .open{
     display: block;
-    z-index: 1;
-    animation: teste .5s ease-in-out;     
-}
-@keyframes teste {
-    from { 
-       top: 37px;
-       transform: scale(1.5);
-     }
-    
+    z-index: 1;    
+    width: 91%;
 }
 
-.nome-motorista div{
+.nome-motorista .inputs{
+    position: relative;
     width: 90%;
-    max-width: 770px;
+    max-width: 400px;
     display: flex;
     justify-content: center;
     gap: 5px;
